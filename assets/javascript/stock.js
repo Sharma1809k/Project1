@@ -5,14 +5,6 @@ var stock;
 $(document).ready(function () {
  $("#reload").on('click', function (event){
    location.reload()
-   $("#update").on('click', function(event){
-    var m=moment()
-    var time =moment().format('hh:mm:ss a')
-var timeDis=$("<p>")
-timeDis.append(time)
-$(".timenow").html(timeDis)
-
-   })
  })
 
  // Function for checkboxes
@@ -56,7 +48,7 @@ $(".timenow").html(timeDis)
     event.preventDefault();
     var up = $("#user-input").val().trim().toUpperCase();
     $("#user-input").val("");
-    var m=moment()
+    // var m=moment()
 
     var time =moment().format('hh:mm:ss a')
 var timeDis=$("<p>")
