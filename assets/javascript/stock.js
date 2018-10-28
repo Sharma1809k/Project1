@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('input[type=checkbox]').prop('checked', false);
   })
 
-  //It is turning numbers into scientific notation and adding the corresponding letter after it,if it is greater than or equal to a certain amount of digits
+  //Turning numbers into scientific notation and adding the corresponding letter after it,if it is greater than or equal to a certain amount of digits
   function test(labelValue) {
     return Math.abs(Number(labelValue)) >= 1.0e+12
       ? Math.abs(Number(labelValue)) / 1.0e+12 + "T"
@@ -44,7 +44,6 @@ $(document).ready(function () {
 
   $("#add").on("click", function loads(event) {
     $(".card").show('display');
-    event.preventDefault();
     event.preventDefault();
     var up = $("#user-input").val().trim().toUpperCase();
     $("#user-input").val("");
